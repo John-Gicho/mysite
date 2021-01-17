@@ -1,0 +1,50 @@
+
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}Contact{% endblock %}
+{% block body %}
+<section id="contact">
+           <div class="contact container">
+               <div><h1 class="section-title">Contact <span>Info</span></h1></div>
+               <div class="contact-items">
+                   <div class="contact-item">
+                       <!--<div class="icon"><img src="./icons/icons8-phone-64.png"></div> -->
+                       <div class="icon"><img src="{% static 'icons/icons8-phone-64.png' %}"></div>
+                       <div class="contact-info">
+                           <h1>Phone</h1>
+                           {% if phone1 == "+254 717830905" %}
+                               <h2>0717830905</h2>
+                                {% else %}
+                                <h2>Call us by the below contact:</h2>
+                           {% endif %}
+
+                           <h2>{{phone2}}</h2>
+                       </div>
+                   </div>
+               </div>
+               <div class="contact-items">
+                   <div class="contact-item">
+                       <!--<div class="icon"><img src="{% static 'icons/icons8-email-64.png' %}"></div> -->
+                       <div class="icon"><img src="{% static 'icons/icons8-email-64.png' %}"></div>
+                       <div class="contact-info">
+                           <h1>Email</h1>
+                           <h2>joeshgichon@yahoo.com</h2>
+                           <h2>johngicho04@gmail.com</h2>
+
+                       </div>
+                   </div>
+               </div>
+               <div class="contact-items">
+                   <div class="contact-item">
+                       <!--<div class="icon"><img src="./icons/icons8-address-64.png"></div> -->
+                       <div class="icon"><img src="{% static 'icons/icons8-address-64.png' %}"></div>
+                       <div class="contact-info">
+                           <h1>Address</h1>
+                           <h2>Nairobi, Embakasi west</h2>
+                           <h2>Kenya</h2>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+{% endblock %}

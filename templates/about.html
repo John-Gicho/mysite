@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}About{% endblock %}
+{% block body %}
+<section id="about">
+           <div class="about container">
+               <div class="col-left">
+                   <div class="about-img">
+                       <!--<img src="./img/profilePic.jpg" alt="profile pic"> -->
+                       <img src="{% static 'img/profilePic.jpg' %}" alt="profile pic">
+                   </div>
+               </div>
+               <div class="col-right">
+                   <h1 class="section-title">About <span>Me</span> </h1>
+                   <h2>Data Scientist/Full-Stack Developer</h2>
+                   <p>
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatum architecto, quibusdam libero est, laborum quas aspernatur, magni unde rem enim aut. Perspiciatis magnam, laudantium velit debitis mollitia blanditiis exercitationem!
+                   </p>
+                   <a class="cta" href="#">Download Resume</a>
+               </div>
+           </div>
+       </section>
+{% endblock %}

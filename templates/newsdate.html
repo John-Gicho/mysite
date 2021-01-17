@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% block title %}news archive{% endblock %}
+{% block body %}
+<h1>My first article {{year}}</h1>
+{% for news in article_list %}
+<h1>{{news.author}}</h1>
+<h2>{{news.title}}</h2>
+<p>{{news.description}}</p>
+<h3>{{news.pub_date}]</h3>
+
+{% endfor %}
+
+{% endblock %}

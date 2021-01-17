@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+{% block title %}signup{% endblock %}
+{% block body %}
+
+<div class="projects container">
+               <div class="projects-header">
+                   <h1 class="section-title">SignUp <span>Page</span> </h1>
+                   <hr>
+               </div>
+               <div class="all-projects">
+                   <form action="{% url 'addUser' %}">
+                       {% csrf_token %}
+                       {{form.as_p}}
+
+                       <input type="submit" value="signUp">
+                   </form>
+
+               </div>
+</div>
+
+{% endblock %}
